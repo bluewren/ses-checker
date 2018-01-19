@@ -76,8 +76,8 @@ class SESChecker implements \Swift_Events_SendListener {
 
 		// If there is at least one recipient (or you love her) let it go.
 		return (count($message->getTo()) > 0 ||
-				count($message->getCc()) > 0 ||
-				count($message->getBcc()) > 0);
+		count($message->getCc()) > 0 ||
+		count($message->getBcc()) > 0);
 	}
 
 	protected function performAPICheck($sender,$recipient)
