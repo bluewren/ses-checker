@@ -28,8 +28,8 @@ class SESCheckerServiceProvider extends ServiceProvider
 		// Publish the config file
 		$this->publishConfig();
 
-        // Hook into the mailer
-        $this->registerSwiftPlugin();
+		// Hook into the mailer
+		$this->registerSwiftPlugin();
 	}
 
 	/**
@@ -57,12 +57,12 @@ class SESCheckerServiceProvider extends ServiceProvider
 	}
 
 	/**
-     * Register the Swift plugin
-     *
-     * @return void
-     */
-    protected function registerSwiftPlugin()
-    {
-        $this->app['mailer']->getSwiftMailer()->registerPlugin(new SESChecker());
-    }
+	* Register the Swift plugin
+	*
+	* @return void
+	*/
+	protected function registerSwiftPlugin()
+	{
+		$this->app['mailer']->getSwiftMailer()->registerPlugin(new SESChecker());
+	}
 }
