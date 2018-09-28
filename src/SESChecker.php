@@ -19,6 +19,7 @@ class SESChecker implements \Swift_Events_SendListener {
 		// If the message fails the API checks then abort sending
 		if(!$this->checkIfCanSend($message)){
 			$event->cancelBubble();
+			return false;
 		}
 	}
 
