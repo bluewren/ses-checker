@@ -1,5 +1,6 @@
 {
 	"name": "bluewren/ses-checker",
+	"version": "1.0.2",
 	"type": "library",
 	"description": "A package to hook into mail sending events and check the recipient against the central bounce/complaint list on the Blue Wren API to decide whether to allow sending.",
 	"authors": [
@@ -12,7 +13,7 @@
 		"laravel/framework": ">=5.3.23",
 		"guzzlehttp/guzzle": "^5.3.1|^6.2.1",
 		"illuminate/support": "~5.1",
-		"php" : "~5.5|~7.0"
+		"php": "~5.5|~7.0"
 	},
 	"autoload": {
 		"psr-4": {
@@ -26,7 +27,7 @@
 			]
 		},
 		"branch-alias": {
-			"dev-master": "1.0-dev"
+			"dev-master": "1.0.x-dev"
 		}
 	}
 }
