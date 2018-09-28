@@ -47,5 +47,5 @@ php artisan vendor:publish --provider="Bluewren\SESChecker\SESCheckerServiceProv
 5. Add the following configuration values to your **_.env_** file and insert the relevant values:
 ```sh
 SES_API_URL=
-SES_APPLICATION_TOKEN
+SES_APPLICATION_TOKEN=
 ```
